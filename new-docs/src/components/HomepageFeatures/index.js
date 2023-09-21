@@ -4,32 +4,28 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/logo.ico').default,
+    title: 'About Rio',
+    Svg: require('../../../static/img/logo.ico').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+		Rio is a terminal application that’s built with Rust, WebGPU, Tokio runtime. It targets to have the best frame per second experience as long you want, but is also configurable to use as minimal from GPU.
+
+		The terminal renderer is based on redux state machine, lines that has not updated will not suffer a redraw. Looking for the minimal rendering process in most of the time. Rio is also designed to support WebAssembly runtime so in the future you will be able to define how a tab system will work with a WASM plugin written in your favorite language.
+
+		Rio uses WGPU, which is an implementation of WebGPU for use outside of a browser and as backend for firefox’s WebGPU implementation. WebGPU allows for more efficient usage of modern GPU’s than WebGL. More info
+
+		Applications using WPGU run natively on Vulkan, Metal, DirectX 11/12, and OpenGL ES; and browsers via WebAssembly on WebGPU and WebGL2.
+
+		It also relies on Rust memory behavior, since Rust is a memory-safe language that employs a compiler to track the ownership of values that can be used once and a borrow checker that manages how data is used without relying on traditional garbage collection techniques. More info
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/logo.ico').default,
+    title: 'Development status?',
+    Svg: require('../../../static/img/logo.ico').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/logo.ico').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+		You can follow me on Twitter (@raphamorims) or Bluesky (@mustache.bsky.social) to follow any update regarding Rio terminal development.
       </>
     ),
   },

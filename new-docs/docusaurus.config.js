@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Meet Rio | Rio Terminal',
   tagline: 'A modern terminal for the 21th century.',
-  favicon: '/static/img/logo.ico',
+  favicon: 'static/img/logo.ico',
 
   // Set the production url of your site here
   url: 'https://raphamorim.io/',
@@ -62,11 +62,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'static/img/logo.ico',
+      image: '@site/static/img/logo.ico',
       navbar: {
         title: 'Rio',
         logo: {
-          src: 'static/img/logo.ico',
+          src: '@site/static/img/logo.ico',
         },
         items: [
 		  {to: '/docs/install', label: 'Install', position: 'left'},
@@ -103,6 +103,10 @@ const config = {
               {
                 label: 'Features',
                 to: '/docs/features',
+              },
+              {
+                label: 'FAQ',
+                to: '/faq',
               },
             ],
           },
